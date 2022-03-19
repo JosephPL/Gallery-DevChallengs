@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #4E5150;
+}
+
+header {
+    width: 960px;
+    margin: auto;
+}
+
+header .card-user .user-img {
+    background-image: url('../img/profilePhoto.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    width: 156px;
+    height: 156px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+    margin-top: 15%;
+    margin-bottom: 0;
+}
+p {
+    font-size: 14px;
+    color: #BDBDBD;
+    margin: 0;
+}
+.card-user {
+    text-align: center;
+    margin: auto;
+}
+.data-user {
+    display: flex;
+    justify-content: center;
+}
+.stats {
+    width: 100px;
+    height: 67px;
+    background: #E5E5E5;
+    text-align: center;
+    border-radius: 12px;
+    margin: 12px;
+}
+main {
+    width: 960px;
+    margin: auto;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto 20px auto 20px auto;
+    grid-template-rows: 299px 20px 299px 20px 299px;
+    margin: 20px 0;
+}
+
+.photo1 {
+    background: url('../img/photo1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 12px;
+}
+
+.photo2 {
+    background: url('../img/photo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 3/6;
+    grid-row: 1/2;
+    border-radius: 12px;
+}
+
+.photo3 {
+    background: url('../img/photo3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    border-radius: 12px;
+}
+
+.photo4 {
+    background: url('../img/photo_4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 5/6;
+    grid-row: 3/6;
+    border-radius: 12px;
+}
+
+.photo5 {
+    background: url('../img/photo5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 5/6;
+    border-radius: 12px;
+}
+
+.photo6 {
+    background: url('../img/photo6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    border-radius: 12px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: #B9BDCF;
+    font-weight: 700;
+}
+
+@media (max-width: 980px){
+    header {
+        width: 646px;
+    }
+    
+    header .card-user .user-img {
+        width: 101px;
+        height: 101px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 12px;
+        margin-top: 15%;
+    }
+    p {
+        font-size: 10px;
+    }
+
+    .stats {
+        width: 78px;
+        height: 52px;
+        margin: 5px;
+    }
+    main {
+        width: 646px;
+    }
+    .row {
+        grid-template-columns: auto 10px auto 10px auto;
+        grid-template-rows: 211px 10px 211px 10px 211px;
+    }
+}
+
+@media (max-width: 660px){
+    header {
+        width: 435px;
+    }
+    
+    main {
+        width: 435px;
+    }
+    .row {
+        grid-template-columns: auto 10px auto 10px auto;
+        grid-template-rows: 140px 10px 140px 10px 140px;
+    }
+}
+
+@media (max-width: 500px){
+    header {
+        width: 375px;
+    }
+    
+    main {
+        width: 375px;
+    }
+    .row {
+        grid-template-columns: auto 10px auto 10px auto;
+        grid-template-rows: 110px 10px 110px 10px 110px;
+    }
+}
